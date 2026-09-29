@@ -1,0 +1,7 @@
+{
+  "name": "cadre-methodologique-vision-agricole",
+  "private": true,
+  "description": "Génération du cadre méthodologique des 15 indicateurs (docx)",
+  "scripts": { "build": "node build.js ../../Cadre_methodologique_15_indicateurs_Vision_Agricole_CIV.docx" },
+  "dependencies": { "docx": "^9.8.1" }
+}
