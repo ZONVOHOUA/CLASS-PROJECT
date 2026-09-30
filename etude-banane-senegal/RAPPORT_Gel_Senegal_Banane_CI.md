@@ -57,7 +57,10 @@ Chargé d'études économiques et agricoles — Date de référence : **30 septe
 ### 2.3 Bilan sénégalais de la mesure de 2025 et incohérences à relever
 
 - 23 700 t commercialisées du 1er septembre à octobre 2025, soit environ 9 milliards FCFA de recettes (Le Soleil/AllAfrica, 23 nov. 2025) ; 25 000 t en moins de trois mois à ~500 FCFA/kg, soit 12,5 milliards FCFA pour ~10 000 producteurs (ARM, repris par la presse). [P]
-- Taux de dépendance aux importations : plus de 55 % en 2021, moins de 20 % en 2025 (Ecofin, FreshPlaza). [P]
+- Taux de dépendance aux importations : plus de 55 % en 2021, moins de 20 % en 2025 (Ecofin, FreshPlaza ; confirmé par Yaya Mamadou Sall, président du Collectif des producteurs de banane de Tambacounda, dans Invest-Time du 20/08/2026). [P]
+- **Volumes locaux écoulés par mois en 2025** (Collectif des producteurs, cité par Invest-Time, 20/08/2026) : **700 t en juillet**, **9 600 t en août**, **12 500 t en septembre**. C'est la seule donnée mensuelle publiée. Elle mesure la commercialisation suivie, pas la production totale. [P]
+- **Difficultés de la filière locale au démarrage du gel de 2025** (Invest-Time, 20/08/2026) : les commerçants et mûrisseurs étaient réticents à s'approvisionner localement, faute de garanties sur la conservation et la régularité des livraisons. Des cartons sont arrivés en **maturation déclenchée prématurément**, probablement à cause d'une **température excessive dans les camions**. Des commerçants ont estimé leurs pertes à **60-70 % de la valeur** de certaines livraisons, soit « des centaines de millions » de FCFA. Ces pertes sont **déclaratives** [NV], mais concordent avec la pénurie de camions frigorifiques et de chambres froides signalée par FreshPlaza.
+- **Troisième version du « gain » de la mesure [X]** : devant les députés, lors du vote du budget 2026 de son ministère (fin 2025), le ministre a parlé de « 9 milliards d'économie ». Or ces 9 milliards correspondent aux **recettes des producteurs locaux** (≈ 23 000 t livrées), pas à une économie de devises ni à un gain budgétaire pour l'État. Le chiffre est ensuite devenu « 82 milliards gardés dans le pays » (sept. 2026). Cette confusion entre chiffre d'affaires local et économie de devises traverse toute la communication officielle.
 - **Incohérence n° 1 [X]** : le chiffre de « 82 milliards FCFA gardés dans le pays » est **sans rapport** avec la valeur des importations bloquées. Les importations sénégalaises de bananes valaient 6,7 M USD (≈ 3,8 Mds FCFA) en 2024 selon l'ANSD, ou 11,9 M USD (≈ 6,8 Mds FCFA) pour l'ensemble du SH 0803 selon OEC. Ce chiffre correspond probablement à la valeur de la production nationale (115 000 t × ~700 FCFA/kg ≈ 80 Mds), et non à une économie de devises. **Argument utile en négociation.**
 - **Incohérence n° 2 [X]** : les besoins nationaux sont estimés à 70 000 t (période 2021-2023), 130 000 t (ARM, 2025) puis 144 000 t (12 000 t/mois, ministre, 2026). Un besoin de 144 000 t face à une production de 115 000 t implique **un déficit de ~29 000 t/an** que le gel de six mois ne peut pas combler en totalité, sauf si la consommation baisse sous l'effet des prix.
 
@@ -96,6 +99,7 @@ En valeur, les Douanes ivoiriennes publient pour la position banane : 98,8 Mds F
 | 2022 | 35 912 t (+118 % en 10 ans) | 17,2 M USD (OEC, SH 0803) | Presse (reprise de données douanières) ; OEC | [P] / [NV] pour le volume |
 | 2024 | **16 341 t** importées par le Sénégal (toutes origines, dont ~98 % CI), soit ~16 000 t d'origine CI | 6,7 M USD (ANSD) ; 11,9 M USD pour tout le SH 0803 (OEC, 97,3 % CI) | Données **miroir** déclarées par le Sénégal | [P] |
 | Avant 2025 | « Environ 50 000 t » venant de Côte d'Ivoire | — | Presse sénégalaise (sept. 2025) | [NV] |
+| 2018 → 2024 | Importations sénégalaises totales : **50 000 t (2018)** → **moins de 30 000 t (2024)**, soit −20 000 t en 6 ans | — | Invest-Time, 20/08/2026 (source primaire non citée) | [NV] ; **[X]** avec l'ANSD (16 341 t en 2024) |
 
 **Parts calculées** (avec les seules données disponibles) :
 
@@ -130,6 +134,7 @@ En valeur, les Douanes ivoiriennes publient pour la position banane : 98,8 Mds F
 
 - **Sénégal** : la production et la cueillette s'étalent sur toute l'année, avec des **pics de fin d'année, de septembre à décembre** (Rikolto ; Le Soleil). Au pic, plus d'une douzaine de camions frigorifiques par jour viennent s'approvisionner à Tambacounda, qui fournit environ 80 % de la production nationale (Le Soleil, mars 2026). Les producteurs se sont organisés pour **approvisionner le marché de juillet à décembre** (FreshPlaza, 2026). La **période de soudure**, pendant laquelle la production locale ne suffit pas, est passée **de trois à deux mois** selon les producteurs (Le Soleil, mars 2026). Ses mois exacts ne sont pas publiés.
 - Rythme observé en 2025 : 23 700 t de septembre à octobre, soit **~11 900 t/mois**, ce qui correspond au besoin mensuel annoncé (12 000 t). Production 2025 : 112 500 t, soit une moyenne de ~9 400 t/mois. **Hors pic, l'offre locale est donc inférieure à ~9 000 t/mois** pour une demande de 11 000-12 000 t/mois.
+- **Donnée mensuelle nouvelle (2025)** : la commercialisation locale suivie est passée de **700 t en juillet** à **9 600 t en août**, puis **12 500 t en septembre** (Collectif des producteurs, Invest-Time, 20/08/2026). Juillet est donc un mois de **très faible offre locale commercialisée**, à ~6 % du besoin mensuel. La montée en charge commence en août, et le besoin est couvert à partir de septembre. [P]
 - **Côte d'Ivoire** : la production industrielle irriguée est **continue toute l'année**. La saisonnalité mensuelle des exportations n'a pas pu être consultée (données Douanes et OCAB non accessibles).
 - **Europe** : la demande et les prix sont traditionnellement **élevés au premier semestre (pic de mars à mai)** et **bas en été (juillet-septembre)**, quand les fruits d'été européens concurrencent la banane (Fruitrop, suivis mensuels de la Commission européenne). [P — connaissance de marché établie, non chiffrée ici pour 2026]
 
@@ -145,8 +150,8 @@ Légende : ███ fort / élevé ▓▓ moyen ░ faible — **(h)** = hypoth
 | Avril | ░ (h, soudure) | ███ (h) | — | — | ███ | **Oui** |
 | Mai | ░▓ (h) | ▓▓ (h) | — | — | ███ | **Oui** |
 | Juin | ▓▓ (h) | ▓▓ (h) | — | (29 juin) | ▓▓ | Oui ou partielle |
-| Juillet | ▓▓ | ░▓ | — | **Gel** | ░ | Non ou partielle |
-| Août | ▓▓ | ░▓ | — | **Gel** | ░ | Non ou partielle |
+| Juillet | ░ (700 t commercialisées en 2025) | ███ | — | **Gel** | ░ | **Oui** |
+| Août | ▓▓ (9 600 t en 2025) | ░▓ | — | **Gel** | ░ | Partielle (1re quinzaine) |
 | Septembre | ███ | ░ | **Gel** | **Gel** | ░ | Non |
 | Octobre | ███ | ░ | **Gel** | **Gel** | ▓▓ | Non |
 | Novembre | ███ | ░ | **Gel** | **Gel** | ▓▓ | Non |
@@ -155,8 +160,8 @@ Légende : ███ fort / élevé ▓▓ moyen ░ faible — **(h)** = hypoth
 **Lecture.**
 1. Le Sénégal **couvre ses besoins** de septembre à novembre, et **probablement** en décembre, grâce au pic de récolte.
 2. Il est **probablement déficitaire** de janvier à mai ou juin. Deux à trois mois de soudure marquée tombent vraisemblablement entre mars et mai, c'est-à-dire pendant la saison sèche chaude, avec stress hydrique et thermique à Tambacounda. **(h)**
-3. En juillet-août, la situation est **intermédiaire**. L'extension du gel à ces mois en 2026 va **au-delà** de la seule protection du pic de récolte.
-4. **Point favorable à la Côte d'Ivoire** : la fenêtre de déficit sénégalais (janvier-juin) coïncide avec la période où les **prix européens sont les plus élevés**. Une ouverture saisonnière limitée au premier semestre coûterait donc **peu** aux exportateurs ivoiriens, qui ont intérêt à servir l'Europe à ce moment-là. À l'inverse, le gel de juillet à décembre les prive du Sénégal **au moment où l'Europe paie le moins**. Le coût du gel est concentré sur cette période.
+3. **Juillet est un mois de déficit**, avec 700 t commercialisées localement en 2025 pour un besoin de ~12 000 t. Août est un mois de transition (9 600 t). En faisant démarrer le gel le 29 juin 2026, le Sénégal a donc fermé son marché **un à deux mois avant que sa production puisse couvrir la demande**. C'est l'argument factuel le plus fort de la Côte d'Ivoire pour contester la durée de six mois : le gel de 2025, qui démarrait le 1er septembre, était lui calé sur le pic. Réserve : il s'agit d'une seule année d'observation, et les volumes de juillet 2026 ont pu être plus élevés.
+4. **Point favorable à la Côte d'Ivoire** : la fenêtre de déficit sénégalais (janvier-juin, et juillet d'après les données de 2025) coïncide en grande partie avec la période où les **prix européens sont les plus élevés**. Une ouverture saisonnière limitée au premier semestre coûterait donc **peu** aux exportateurs ivoiriens, qui ont intérêt à servir l'Europe à ce moment-là. À l'inverse, le gel de juillet à décembre les prive du Sénégal **au moment où l'Europe paie le moins**. Le coût du gel est concentré sur cette période.
 
 **Vérification de l'hypothèse d'un calendrier saisonnier.** L'hypothèse est **cohérente** avec les données disponibles : pic sénégalais de septembre à décembre, soudure de deux à trois mois, besoin de 12 000 t/mois contre une offre moyenne de ~9 400 t/mois. Elle est aussi confirmée par le **précédent de l'oignon**, fondé sur un gel saisonnier et une réouverture lorsque les stocks baissent, en place depuis 2003 et durablement accepté par les exportateurs néerlandais. Elle reste **à valider** par les séries mensuelles ANSD et ARM.
 
@@ -214,7 +219,7 @@ Chaque option est évaluée selon les quatre questions : **tonnage, délai, coû
 - Production commercialisable : relevés ARM et interprofession de Tambacounda.
 - **Déclenchement automatique** : lorsque le besoin calculé dépasse un seuil convenu (par exemple 2 000 t/mois pendant 2 semaines), ou lorsque le prix de gros de la banane locale dépasse un plafond convenu (par exemple 500 FCFA/kg, niveau de 2025), des licences d'importation sont délivrées.
 
-**Ordre de grandeur de la fenêtre.** Avec une production de 115 000 t et un besoin de 130 000 à 144 000 t, le déficit annuel se situe entre **~15 000 et 29 000 t**, concentré de janvier à juin. Cela correspond au niveau des importations de 2024 (16 341 t).
+**Ordre de grandeur de la fenêtre.** Avec une production de 115 000 t et un besoin de 130 000 à 144 000 t, le déficit annuel se situe entre **~15 000 et 29 000 t**, concentré de janvier à juillet. Cela correspond au niveau des importations de 2024 (16 341 t).
 
 | Tonnage | Délai | Coût | Effet revenu producteur |
 |---|---|---|---|
@@ -222,7 +227,9 @@ Chaque option est évaluée selon les quatre questions : **tonnage, délai, coû
 
 Autres formules : **contingent tarifaire** (peu pertinent, car le Sénégal ne peut pas appliquer de droit sur un produit originaire UEMOA) ; **contrats d'approvisionnement complémentaires** entre importateurs sénégalais et exportateurs ivoiriens, adossés au calendrier ; **comité bilatéral de suivi du marché**, rattaché à la Commission mixte ivoiro-sénégalaise réactivée en 2025-2026 avec un mandat de six mois sur les obstacles commerciaux.
 
-**Monnaie d'échange ivoirienne à explorer** : appui technique aux producteurs sénégalais (vitroplants, conduite de plantation, mûrisserie) ; accords sur d'autres flux (le Sénégal exporte vers la Côte d'Ivoire) ; **exemption du transit** vers la Mauritanie et le Mali ; engagement ivoirien de **qualité et de traçabilité**.
+**Alliés objectifs au Sénégal** : les commerçants et mûrisseurs qui ont subi des pertes en 2025 (maturation prématurée dans des camions non réfrigérés, pertes déclarées de 60-70 % sur certaines livraisons) ont intérêt à un approvisionnement ivoirien régulier pendant la soudure. Leur témoignage peut appuyer, côté sénégalais, la demande d'un calendrier.
+
+**Monnaie d'échange ivoirienne à explorer** : appui technique aux producteurs sénégalais (vitroplants, conduite de plantation, **chaîne du froid et mûrisserie**, domaine où la filière ivoirienne a une compétence éprouvée et où la filière sénégalaise est la plus faible) ; accords sur d'autres flux (le Sénégal exporte vers la Côte d'Ivoire) ; **exemption du transit** vers la Mauritanie et le Mali ; engagement ivoirien de **qualité et de traçabilité**.
 
 ### B. Réorientation vers d'autres marchés africains
 
@@ -320,15 +327,17 @@ Autres formules : **contingent tarifaire** (peu pertinent, car le Sénégal ne p
 **Arguments pouvant justifier la mesure sénégalaise**
 - Caractère **temporaire et saisonnier**, et objectif de régulation de marché (mission de l'ARM).
 - Invocation possible d'une **clause de sauvegarde** (perturbation grave d'un secteur agricole émergent, ~10 000 producteurs). La mesure n'est défendable sur ce terrain que si la procédure (notification, durée, proportionnalité) a été respectée. **Aucune notification n'a été identifiée dans les sources.**
+- Cet argument est défendu publiquement au Sénégal. Le Pr Malick Sané, directeur du Laboratoire de Politique Commerciale (LAPOCOM, FASEG/UCAD), estime que la mesure est « en étroite harmonie avec les principes de l'OMC en tant que mesure de sauvegarde » et qu'elle devrait « inspirer les pays de la sous-région » (Invest-Time, 20/08/2026). **Réponse ivoirienne à préparer** : une sauvegarde OMC suppose une **enquête préalable** établissant un dommage grave causé par un **accroissement des importations** (Accord sur les sauvegardes, art. 2-4). Elle doit être **notifiée** au Comité des sauvegardes (art. 12) et prend en principe la forme d'un droit ou d'un contingent, **non d'une prohibition totale**. Or les importations sénégalaises **baissaient** (−20 000 t entre 2018 et 2024 selon la même source), ce qui affaiblit l'argument d'un accroissement dommageable. Dans l'UEMOA et la CEDEAO, les procédures de sauvegarde communautaires s'appliquent en outre avant les règles OMC. Le risque d'**effet de contagion** régionale évoqué par cet économiste est un motif supplémentaire pour la Côte d'Ivoire de faire encadrer juridiquement la pratique, plutôt que de la laisser devenir une norme tolérée.
 - **Pratique ancienne non sanctionnée** (oignon depuis 2003), que certains invoqueront comme tolérance de fait.
 - Sécurité alimentaire et souveraineté alimentaire, politiquement fortes mais **juridiquement faibles** comme exception au sens des traités.
 
 **Arguments de la Côte d'Ivoire**
 - Interdiction totale = **restriction quantitative** au sens de l'art. 76 UEMOA, de l'art. 41 CEDEAO et du Protocole ZLECAf. Le motif économique ne figure pas parmi les exceptions.
 - **Discrimination de fait** : ~98 % des importations visées sont ivoiriennes.
-- **Disproportion** : six mois, dont deux mois (juillet-août) hors du pic de récolte sénégalais ; aucun critère objectif de levée ; blocage **du transit** vers des pays tiers (contraire aux règles de transit CEDEAO et ZLECAf, Annexe 8).
+- **Disproportion** : six mois, dont juillet, où l'offre locale commercialisée n'était que de 700 t en 2025 pour un besoin de ~12 000 t, et août, mois de transition, soit deux mois hors du pic de récolte sénégalais ; aucun critère objectif de levée ; blocage **du transit** vers des pays tiers (contraire aux règles de transit CEDEAO et ZLECAf, Annexe 8).
 - Si une sauvegarde est invoquée : absence apparente de notification et d'enquête.
-- Chiffres officiels incohérents (82 Mds FCFA « gardés » contre une valeur des importations de ~4-7 Mds FCFA).
+- Chiffres officiels incohérents (« 9 milliards d'économie » puis « 82 Mds FCFA gardés », contre une valeur des importations de ~4-7 Mds FCFA).
+- **Intérêt des consommateurs et commerçants sénégalais** : pertes déclarées de 60-70 % sur certaines livraisons locales en 2025, faute de chaîne du froid ; prix de détail de ~800-1 000 FCFA/kg.
 
 **Conclusion juridique (prudente).** La mesure présente des **éléments sérieux d'incompatibilité** avec les engagements communautaires du Sénégal, en particulier le caractère total de l'interdiction, le motif économique, l'absence de critère de levée et le blocage du transit. Elle pourrait **partiellement** s'abriter derrière une clause de sauvegarde **si** la procédure a été suivie. **Il n'est pas possible de conclure définitivement** sans le texte de la circulaire et sans savoir si des notifications ont été faites. Les précédents (oignon, Nigeria 2019, Ghana 2025) montrent que **l'efficacité pratique des recours est faible** et que leurs délais dépassent la durée du gel.
 
@@ -379,8 +388,8 @@ Appréciations qualitatives justifiées (++ très favorable, + favorable, 0 neut
 ### 10.2 Année 2027 : un accord de calendrier
 
 **Ce que la Côte d'Ivoire devrait demander (justifié par les données de la section 4)** :
-1. **Aucune fermeture de janvier à juin** : la soudure sénégalaise et les besoins d'importation se situent dans cette période.
-2. Fermeture éventuelle **limitée au pic de récolte** (septembre-novembre, extension possible à décembre) et **annoncée au moins 60 jours à l'avance** (visibilité pour les plannings de coupe et de fret).
+1. **Aucune fermeture de janvier à juillet** : la soudure sénégalaise et les besoins d'importation se situent dans cette période. En juillet 2025, seules 700 t de banane locale ont été commercialisées.
+2. Fermeture éventuelle **limitée au pic de récolte** (de mi-août ou septembre à novembre, extension possible à décembre), c'est-à-dire le calendrier du gel de 2025 et non celui de 2026, et **annoncée au moins 60 jours à l'avance** (visibilité pour les plannings de coupe et de fret).
 3. **Réouverture automatique** sur critère objectif : besoin résiduel calculé par l'ARM ou prix de gros supérieur à un seuil.
 4. **Comité bilatéral de suivi du marché** (ARM, MINADERPV, ministère du Commerce, OCAB et interprofession sénégalaise), réunion mensuelle et bilan publié.
 5. **Libre transit** garanti vers la Mauritanie, le Mali et la Gambie.
@@ -426,7 +435,7 @@ Une contre-mesure (par exemple un gel des importations de produits sénégalais)
 4. **Acteurs touchés** : les exportateurs industriels desservant Dakar (SCB en tête, au vu de ses parts de marché), les importateurs et mûrisseurs dakarois, et éventuellement des petits producteurs à recenser.
 5. **Mois d'expédition maximale vers le Sénégal** : non mesurable sans données mensuelles. Le **premier semestre** est probable (déficit sénégalais) [NV].
 6. **Production sénégalaise maximale** : septembre-décembre [P].
-7. **Besoin réel d'importation** : probablement janvier-juin, avec une soudure de 2-3 mois vers mars-mai [P/NV].
+7. **Besoin réel d'importation** : probablement de janvier à juillet (700 t seulement de banane locale commercialisée en juillet 2025), avec une soudure marquée de 2-3 mois vers mars-mai [P/NV].
 8. **Ouverture saisonnière pertinente** : **oui**, pour les deux parties. Elle est cohérente avec la saisonnalité européenne et avec le précédent de l'oignon.
 9. **Pays capables d'absorber** : l'UE pour les fruits de catégorie export ; le Mali, le Burkina Faso et la Mauritanie pour des volumes limités.
 10. **Délais** : UE 2-6 semaines ; Sahel 1-3 mois (flux existants) à 6-12 mois (nouveaux circuits).
@@ -503,6 +512,8 @@ Une contre-mesure (par exemple un gel des importations de produits sénégalais)
 - ANSD (Sénégal) : https://www.ansd.sn (données d'importation 2024 reprises par Ecofin)
 
 ### 12.4 Médias professionnels et presse
+
+- Invest-Time (S. Fall), « Suspension des importations de banane : le Sénégal économise plus de 9 milliards de FCFA » (20/08/2026) : https://invest-time.net/gel-importation-banane-senegal-bilan/. Contenu fourni par le commanditaire : volumes mensuels juillet-septembre 2025, pertes des commerçants, position du Pr Malick Sané (LAPOCOM/UCAD), déclarations du ministre devant l'Assemblée nationale, importations de 2018 et 2024.
 
 - Senego, « Banane : le Sénégal porte la fermeture à six mois malgré une plainte à la CEDEAO » (env. sept. 2026) : https://senego.com/banane-le-senegal-porte-la-fermeture-a-six-mois-malgre-une-plainte-a-la-cedeao_2006252.html
 - Senego, « Banane locale : l'État bloque les importations grâce à une production record » (env. juin-juillet 2026) : https://senego.com/banane-locale-letat-bloque-les-importations-grace-a-une-production-record_1976701.html
