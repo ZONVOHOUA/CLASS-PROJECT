@@ -1,0 +1,468 @@
+<title>Marchés vivriers S39 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: bandeau de synthèse → tuiles → approvisionnement + alertes → variations (barres divergentes) → fourchettes min-max (haltères) → tableau détaillé */
+:root {
+  --bg: #f7f7f4;
+  --surface: #fdfdfb;
+  --ink: #16201b;
+  --ink-2: #4d5650;
+  --muted: #858c86;
+  --grid: #e2e4de;
+  --axis: #c3c7bf;
+  --border: rgba(22,32,27,.10);
+  --accent: #b5731d;            /* ocre : marque de la page */
+  --accent-soft: #f4e6d2;
+  --up: #d8433f;                /* hausse de prix (pôle chaud) */
+  --down: #2a78d6;              /* baisse de prix (pôle froid) */
+  --zero: #b9bbb4;
+  --abj: #4a3aa7;               /* série Abidjan */
+  --int: #1baf7a;               /* série Intérieur */
+  --good: #0f7a2e; --good-bg: #e2f2e5;
+  --mid: #8a5a00;  --mid-bg: #fbeed0;
+  --low: #b3302d;  --low-bg: #fbe3e1;
+  --f-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111513; --surface: #1a1f1c; --ink: #f1f3ef; --ink-2: #c1c6be; --muted: #8b928b;
+  --grid: #2a302c; --axis: #3b423d; --border: rgba(255,255,255,.10);
+  --accent: #e0a24f; --accent-soft: #3a2c19;
+  --up: #e66767; --down: #3987e5; --zero: #5a605b;
+  --abj: #9085e9; --int: #199e70;
+  --good: #5fd07a; --good-bg: #173222; --mid: #f0c060; --mid-bg: #3a2f14; --low: #f08a86; --low-bg: #3d1c1b;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111513; --surface: #1a1f1c; --ink: #f1f3ef; --ink-2: #c1c6be; --muted: #8b928b;
+  --grid: #2a302c; --axis: #3b423d; --border: rgba(255,255,255,.10);
+  --accent: #e0a24f; --accent-soft: #3a2c19;
+  --up: #e66767; --down: #3987e5; --zero: #5a605b;
+  --abj: #9085e9; --int: #199e70;
+  --good: #5fd07a; --good-bg: #173222; --mid: #f0c060; --mid-bg: #3a2f14; --low: #f08a86; --low-bg: #3d1c1b;
+  color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.5 }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 56px; display: grid; gap: 28px }
+h1, h2 { font-family: var(--f-display); font-weight: 600; text-wrap: balance; margin: 0; letter-spacing: -.01em }
+h1 { font-size: clamp(1.6rem, 3.6vw, 2.35rem); line-height: 1.15 }
+h2 { font-size: 1.3rem; line-height: 1.25 }
+p { margin: 0 }
+.eyebrow { font-family: var(--f-mono); font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent) }
+.muted { color: var(--muted) }
+.small { font-size: .84rem }
+.num { font-variant-numeric: tabular-nums }
+
+header.top { display: grid; gap: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--border) }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--ink-2); font-size: .88rem }
+.meta span b { color: var(--ink); font-weight: 600 }
+.lede { max-width: 72ch; color: var(--ink-2) }
+
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; display: grid; gap: 6px; align-content: start }
+.tile .lbl { font-size: .78rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em }
+.tile .big { font-family: var(--f-display); font-size: 1.9rem; line-height: 1.1 }
+.tile .sub { font-size: .86rem; color: var(--ink-2) }
+.split { display: flex; gap: 12px; flex-wrap: wrap; font-size: .86rem }
+.split i { font-style: normal; font-weight: 600 }
+.arrow-up { color: var(--up) } .arrow-down { color: var(--down) }
+
+section.block { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; display: grid; gap: 16px; min-width: 0 }
+.block-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px }
+.block-head > div { display: grid; gap: 4px; min-width: 0 }
+.two { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px }
+
+/* Approvisionnement */
+.supply { width: 100%; border-collapse: collapse; font-size: .9rem }
+.supply th, .supply td { text-align: left; padding: 9px 8px; border-bottom: 1px solid var(--grid); vertical-align: top }
+.supply th { font-weight: 500; color: var(--muted); font-size: .76rem; text-transform: uppercase; letter-spacing: .05em }
+.supply td:first-child { font-weight: 600; white-space: nowrap }
+.chip { display: inline-flex; align-items: center; gap: 5px; padding: 2px 9px; border-radius: 99px; font-size: .78rem; font-weight: 600; white-space: nowrap }
+.chip::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor }
+.chip.bon { color: var(--good); background: var(--good-bg) }
+.chip.moyen { color: var(--mid); background: var(--mid-bg) }
+.note { display: block; margin-top: 4px; font-size: .78rem; color: var(--ink-2) }
+.alerts { display: grid; gap: 10px; align-content: start }
+.alert { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; padding: 10px 12px; border-radius: 8px; background: var(--low-bg) }
+.alert .ic { color: var(--low); font-weight: 700; font-family: var(--f-mono); line-height: 1.4 }
+.alert b { display: block; font-size: .9rem }
+.alert span { font-size: .82rem; color: var(--ink-2) }
+.alert.tension { background: var(--mid-bg) } .alert.tension .ic { color: var(--mid) }
+
+/* Controls */
+.seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--bg) }
+.seg button { font: inherit; font-size: .84rem; border: 0; background: transparent; color: var(--ink-2); padding: 6px 12px; cursor: pointer }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg) }
+.seg button:focus-visible, .tbl-wrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.controls { display: flex; flex-wrap: wrap; gap: 8px }
+
+.chart { width: 100%; min-width: 0; position: relative }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible }
+.chart text { font-family: var(--f-body); fill: var(--ink-2); font-size: 12px }
+.chart .tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums }
+.chart .fam { fill: var(--accent); font-family: var(--f-mono); font-size: 10.5px; letter-spacing: .08em }
+.chart .val { fill: var(--ink); font-size: 11.5px; font-weight: 600; font-variant-numeric: tabular-nums }
+.chart .hit { fill: transparent; cursor: default }
+.chart .row:hover .hit { fill: var(--grid); fill-opacity: .55 }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: .82rem; color: var(--ink-2) }
+.legend span { display: inline-flex; gap: 6px; align-items: center }
+.sw { width: 12px; height: 12px; border-radius: 3px; display: inline-block }
+.sw.dot { border-radius: 50% }
+
+.tip { position: fixed; pointer-events: none; z-index: 10; background: var(--surface); color: var(--ink); border: 1px solid var(--border); border-radius: 8px; padding: 9px 11px; font-size: .82rem; box-shadow: 0 6px 20px rgba(0,0,0,.14); max-width: 280px; display: grid; gap: 3px }
+.tip b { font-size: .88rem }
+.tip .r { display: flex; justify-content: space-between; gap: 14px; font-variant-numeric: tabular-nums }
+
+.markets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px }
+.mk { display: grid; gap: 8px; padding: 14px; border-radius: 10px; background: var(--bg) }
+.mk h3 { margin: 0; font-size: .95rem; font-weight: 600 }
+.bars { display: grid; gap: 6px }
+.bar-row { display: grid; grid-template-columns: 130px 1fr 44px; gap: 8px; align-items: center; font-size: .84rem }
+.bar-row .track { height: 8px; background: var(--grid); border-radius: 4px; overflow: hidden }
+.bar-row .fill { height: 100%; border-radius: 4px }
+.bar-row .n { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-2) }
+
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px }
+table.data { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 760px }
+table.data th, table.data td { padding: 7px 10px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top }
+table.data th { position: sticky; top: 0; background: var(--surface); color: var(--muted); font-weight: 500; font-size: .74rem; text-transform: uppercase; letter-spacing: .04em }
+table.data td.n, table.data th.n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap }
+table.data tr.famrow td { background: var(--bg); font-family: var(--f-mono); font-size: .72rem; letter-spacing: .08em; color: var(--accent); text-transform: uppercase }
+.pos { color: var(--up); font-weight: 600 } .neg { color: var(--down); font-weight: 600 }
+
+footer { font-size: .8rem; color: var(--muted); display: grid; gap: 6px; max-width: 90ch }
+
+@media (max-width: 900px) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+  .two, .markets { grid-template-columns: 1fr }
+}
+@media (max-width: 480px) {
+  .wrap { padding-inline: 16px }
+  .tiles { grid-template-columns: 1fr }
+  section.block { padding: 16px 14px }
+  .bar-row { grid-template-columns: 104px 1fr 36px }
+  .supply td:first-child { white-space: normal }
+}
+@media (prefers-reduced-motion: no-preference) { .chart rect.bar { transition: width .25s, x .25s } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">Note de conjoncture n°39 · OCPV / SIM</span>
+    <h1>Marchés vivriers de Côte d'Ivoire, semaine du 21 au 27 septembre 2026</h1>
+    <div class="meta">
+      <span>Source <b>Ministère du Commerce, de l'Industrie et de l'Artisanat</b></span>
+      <span>Unité <b>FCFA / kg</b></span>
+      <span>Couverture <b>Abidjan (5 marchés) · Intérieur</b></span>
+    </div>
+    <p class="lede">Abidjan est correctement approvisionné et les prix bougent surtout sur les féculents et les légumes frais : le manioc, l'aubergine et le gombo montent, l'igname kponan recule. À l'intérieur, l'offre est globalement moyenne et les prix restent stables ; la tomate baisse et le maïs remonte.</p>
+  </header>
+
+  <div class="tiles" id="tiles"></div>
+
+  <section class="block">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Approvisionnement</span>
+        <h2>Niveau d'offre par famille de produits</h2>
+      </div>
+    </div>
+    <div class="two">
+      <div class="tbl-wrap" style="border:0">
+        <table class="supply" id="supply"></table>
+      </div>
+      <div class="alerts">
+        <p class="small muted">Points de tension signalés</p>
+        <div id="alerts" class="alerts"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Évolution hebdomadaire</span>
+        <h2>Variation des prix moyens par rapport à la semaine 38</h2>
+      </div>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Zone">
+          <button id="var-abj" aria-pressed="true" data-zone="abj">Abidjan</button>
+          <button id="var-int" aria-pressed="false" data-zone="int">Intérieur</button>
+        </div>
+        <div class="seg" role="group" aria-label="Tri">
+          <button id="sort-fam" aria-pressed="true" data-sort="fam">Par famille</button>
+          <button id="sort-var" aria-pressed="false" data-sort="var">Par variation</button>
+        </div>
+      </div>
+    </div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--up)"></i>Hausse</span>
+      <span><i class="sw" style="background:var(--down)"></i>Baisse</span>
+      <span><i class="sw" style="background:var(--zero)"></i>Stable (0 %)</span>
+    </div>
+    <div class="chart" id="var-chart"></div>
+    <p class="small muted" id="var-comment"></p>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Dispersion des prix</span>
+        <h2>Fourchettes de prix minimum et maximum observées</h2>
+      </div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--abj)"></i>Abidjan</span>
+        <span><i class="sw" style="background:var(--int)"></i>Intérieur</span>
+      </div>
+    </div>
+    <p class="small muted">Chaque segment va du prix le plus bas au prix le plus haut relevé. Survolez une ligne pour voir les marchés concernés.</p>
+    <div class="chart" id="range-chart"></div>
+    <div class="chart" id="range-chart-meat"></div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Où acheter</span>
+        <h2>Marchés les plus souvent cités</h2>
+      </div>
+    </div>
+    <div class="markets" id="markets"></div>
+    <p class="small muted">À l'intérieur, les localités du nord (Séguéla, Ouangolo, Korhogo, Minignan) et les marchés ruraux dits « lôgbôdougou » affichent les prix les plus bas ; les marchés du district de la Comoé reviennent souvent parmi les plus chers.</p>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <div>
+        <span class="eyebrow">Données</span>
+        <h2>Tableau détaillé</h2>
+      </div>
+      <div class="seg" role="group" aria-label="Zone du tableau">
+        <button id="tbl-abj" aria-pressed="true" data-zone="abj">Abidjan</button>
+        <button id="tbl-int" aria-pressed="false" data-zone="int">Intérieur</button>
+      </div>
+    </div>
+    <div class="tbl-wrap" tabindex="0"><table class="data" id="data-table"></table></div>
+  </section>
+
+  <footer>
+    <p>Source : Note de conjoncture n°39, Sous-direction du Système d'Information des Marchés et de la Documentation (OCPV/DSSID/SID/SIM), semaine 39 de 2026.</p>
+    <p>Les variations sont celles publiées dans la note. Pour Abidjan, elles correspondent à (S39 − S38) / S39, ce qui explique l'écart avec un calcul sur la base S38 (manioc : +38 % publié, +60 % sur base S38). Pour l'intérieur, les colonnes de la note sont intitulées S37 et S38 ; elles sont présentées ici comme semaine précédente et semaine en cours, conformément au commentaire de la note. Les noms de marchés ont été harmonisés (orthographe).</p>
+  </footer>
+</div>
+
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const FAM = ["Céréales", "Féculents", "Légumes", "Oléagineux", "Produits animaux et halieutiques"];
+// [produit, famille, Abidjan{prev,cur,var,min,max,cheap,dear}, Intérieur{...}]
+const P = [
+  ["Maïs grain", 0, [480,460,-4,400,500,"Adjamé, Koumassi","Abobo, Bingerville, Cocody Cocovico"], [260,300,13,120,500,"Minignan","Adzopé GM, Bondoukou, Dabou, Yamoussoukro Möh Faitai"]],
+  ["Mil", 0, [560,550,-2,500,600,"Abobo, Adjamé","Cocody Cocovico, Koumassi"], [530,540,2,330,700,"Ouangolo","Méagui, Minignan"]],
+  ["Riz de grande consommation", 0, [610,610,0,550,650,"Adjamé","Bingerville, Cocody Cocovico"], [520,530,2,450,600,"Korhogo GM","Duékoué, Méagui, Séguéla"]],
+  ["Riz local", 0, [730,720,-1,700,750,"Adjamé, Cocody Cocovico","Bingerville"], [480,480,0,310,700,"Séguéla","San Pedro"]],
+  ["Banane plantain", 1, [470,510,8,400,670,"Koumassi","Cocody Cocovico"], [440,400,-10,110,790,"Bouaflé","Dimbokro GM"]],
+  ["Igname assawa", 1, [550,640,14,500,600,"Abobo, Adjamé, Cocody Cocovico","Bingerville"], [480,500,4,300,960,"Agnibilékrou","Kotobi GM"]],
+  ["Igname kponan", 1, [670,525,-28,500,800,"Bingerville","Cocody Cocovico"], [610,610,0,300,950,"Bondoukou","Kotobi GM"]],
+  ["Manioc", 1, [300,480,38,310,795,"Koumassi","Cocody Cocovico"], [250,250,0,76,770,"Duékoué","Bouaflé"]],
+  ["Aubergine n'drowa", 2, [440,570,23,400,940,"Bingerville","Cocody Cocovico"], [460,460,0,140,1670,"Ouangolo","Abengourou"]],
+  ["Gombo frais", 2, [670,830,19,510,1190,"Abobo","Cocody Cocovico"], [730,780,6,230,2500,"Korhogo, Korhogo Haoussabougou","Bouaflé"]],
+  ["Oignon violet", 2, [990,960,-3,750,1500,"Bingerville","Cocody Cocovico"], [910,910,0,500,1320,"Agboville","Bondoukou"]],
+  ["Oignon blanc (Holland)", 2, [770,720,-7,600,900,"Abobo","Cocody Cocovico"], [800,800,0,500,1060,"Agboville","Ouangolo"]],
+  ["Piment frais", 2, [560,680,18,310,1430,"Abobo","Adjamé"], [1070,1040,-3,270,2170,"Adzopé","Yamoussoukro Möh Faitai"]],
+  ["Tomate Sodefel", 2, [730,670,-9,500,1000,"Abobo, Bingerville","Cocody Cocovico"], [875,760,-16,350,1200,"Bouaflé","Adzopé"]],
+  ["Arachide décortiquée", 3, [1150,1150,0,1100,1200,"Adjamé, Koumassi","Bingerville, Cocody Cocovico"], [900,930,3,600,1300,"Korhogo GM, Méagui GM","Agboville"]],
+  ["Graine de palme", 3, [340,400,15,250,600,"Bingerville","Adjamé"], [320,290,-10,140,500,"Daloa","Yamoussoukro GM"]],
+  ["Viande de bœuf avec os", 4, [3880,3880,0,3500,4000,"Adjamé","Bingerville, Cocody Cocovico, Koumassi"], [2890,2910,1,2000,3500,"Minignan, Ouangolo","Aboisso GM, Duékoué"]],
+  ["Poisson chinchard « Apollo »", 4, [1560,1630,4,1300,2000,"Abobo","Cocody Cocovico"], [1790,1780,-1,1100,2000,"Gagnoa","Minignan GM, Man GM, Korhogo GM, Duékoué, Bouaké, Bouaflé, Bongouanou, Agnibilékrou, Aboisso"]],
+  ["Poisson maquereau", 4, [1460,1560,6,1300,1800,"Adjamé","Cocody Cocovico"], [1680,1690,1,1200,2000,"Agboville","Bouaflé, Duékoué, Man"]],
+].map(([name, fam, a, i]) => {
+  const z = v => ({ prev: v[0], cur: v[1], v: v[2], min: v[3], max: v[4], cheap: v[5], dear: v[6] });
+  return { name, fam, abj: z(a), int: z(i) };
+});
+const ZN = { abj: "Abidjan", int: "Intérieur" };
+const fmt = n => n.toLocaleString("fr-FR");
+const pct = v => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v) + " %";
+const NS = "http://www.w3.org/2000/svg";
+const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+
+/* ---------- Tuiles ---------- */
+function stats(z) {
+  const up = P.filter(p => p[z].v > 0), dn = P.filter(p => p[z].v < 0), eq = P.filter(p => p[z].v === 0);
+  const hi = P.reduce((a, b) => b[z].v > a[z].v ? b : a), lo = P.reduce((a, b) => b[z].v < a[z].v ? b : a);
+  return { up: up.length, dn: dn.length, eq: eq.length, hi, lo };
+}
+const sA = stats("abj"), sI = stats("int");
+const tileTrend = (z, s, word) => `<div class="tile"><span class="lbl">Tendance ${ZN[z]}</span><span class="big">${word}</span>
+  <div class="split"><span><i class="arrow-up">▲ ${s.up}</i> hausses</span><span><i class="arrow-down">▼ ${s.dn}</i> baisses</span><span><i>= ${s.eq}</i> stables</span></div></div>`;
+const tileExt = (kind, key) => {
+  const a = key === "hi" ? sA.hi : sA.lo, b = key === "hi" ? sI.hi : sI.lo, cls = key === "hi" ? "arrow-up" : "arrow-down";
+  return `<div class="tile"><span class="lbl">${kind}</span><span class="big ${cls}">${pct(a.abj.v)}</span>
+  <span class="sub"><b>${a.name}</b> à Abidjan (${fmt(a.abj.prev)} → ${fmt(a.abj.cur)} FCFA)</span>
+  <span class="sub">Intérieur : ${b.name} ${pct(b.int.v)} (${fmt(b.int.prev)} → ${fmt(b.int.cur)} FCFA)</span></div>`;
+};
+document.getElementById("tiles").innerHTML =
+  tileTrend("abj", sA, "Hausse modérée") + tileTrend("int", sI, "Stabilité") +
+  tileExt("Plus forte hausse", "hi") + tileExt("Plus forte baisse", "lo");
+
+/* ---------- Approvisionnement ---------- */
+const SUP = [
+  ["Céréales", ["moyen", "Relativement moyen sur l'ensemble des marchés"], ["moyen", "Maïs faible à Man et Ouangolo"]],
+  ["Féculents", ["moyen", "Offre moyenne"], ["bon", "Bon niveau cette semaine"]],
+  ["Légumes", ["moyen", "Oignon violet faible à Cocody Cocovico"], ["bon", "Tensions à Bouaflé (oignon blanc) et Dabou (oignon violet)"]],
+  ["Oléagineux", ["moyen", "Arachide gros grain et graine de palme moyennement présentes"], ["moyen", "Niveau faible à Man et Odienné"]],
+  ["Produits animaux et halieutiques", ["bon", "Bœuf, chinchard et maquereau bien présents"], ["moyen", "Offre moyenne en protéines animales"]],
+];
+const lvl = l => `<span class="chip ${l}">${l === "bon" ? "Bon" : "Moyen"}</span>`;
+document.getElementById("supply").innerHTML = `<thead><tr><th>Famille</th><th>Abidjan</th><th>Intérieur</th></tr></thead><tbody>` +
+  SUP.map(([f, a, i]) => `<tr><td>${f}</td><td>${lvl(a[0])}<span class="note">${a[1]}</span></td><td>${lvl(i[0])}<span class="note">${i[1]}</span></td></tr>`).join("") + "</tbody>";
+
+const AL = [
+  ["low", "Man, Ouangolo", "Maïs grain : approvisionnement faible"],
+  ["low", "Man, Odienné", "Oléagineux (arachide, graine de palme) : niveau faible"],
+  ["low", "Cocody Cocovico (Abidjan)", "Oignon violet : approvisionnement faible"],
+  ["tension", "Bouaflé", "Oignon blanc : tension sur l'offre"],
+  ["tension", "Dabou", "Oignon violet : tension sur l'offre"],
+];
+document.getElementById("alerts").innerHTML = AL.map(([k, w, t]) =>
+  `<div class="alert ${k === "tension" ? "tension" : ""}"><span class="ic">${k === "tension" ? "!" : "▼"}</span><div><b>${w}</b><span>${k === "tension" ? "Tension · " : "Faible · "}${t}</span></div></div>`).join("");
+
+/* ---------- Tooltip ---------- */
+const tip = document.getElementById("tip");
+function showTip(e, html) {
+  tip.innerHTML = html; tip.hidden = false;
+  const r = tip.getBoundingClientRect(), pad = 14;
+  let x = e.clientX + pad, y = e.clientY + pad;
+  if (x + r.width > innerWidth - 8) x = e.clientX - r.width - pad;
+  if (y + r.height > innerHeight - 8) y = e.clientY - r.height - pad;
+  tip.style.left = Math.max(8, x) + "px"; tip.style.top = Math.max(8, y) + "px";
+}
+const hideTip = () => { tip.hidden = true; };
+
+/* ---------- Variations (barres divergentes) ---------- */
+const state = { zone: "abj", sort: "fam", tbl: "abj" };
+function drawVar() {
+  const host = document.getElementById("var-chart");
+  const W = Math.max(320, host.clientWidth), narrow = W < 560;
+  const labW = narrow ? 130 : 210, R = 44, rowH = 24, famH = 26;
+  const z = state.zone;
+  let rows = [];
+  if (state.sort === "fam") FAM.forEach((f, fi) => { rows.push({ fam: f }); P.filter(p => p.fam === fi).forEach(p => rows.push({ p })); });
+  else rows = [...P].sort((a, b) => b[z].v - a[z].v).map(p => ({ p }));
+  const top = 22;
+  const H = top + rows.reduce((h, r) => h + (r.fam ? famH : rowH), 0) + 6;
+  const x0 = labW, x1 = W - R, dom = narrow ? 52 : 44, sx = v => x0 + (v + dom) / (2 * dom) * (x1 - x0);
+  host.innerHTML = "";
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `Variation des prix moyens, ${ZN[z]}` }, host);
+  [-40, -20, 0, 20, 40].forEach(t => {
+    el("line", { x1: sx(t), x2: sx(t), y1: top - 4, y2: H, stroke: t === 0 ? "var(--axis)" : "var(--grid)", "stroke-width": 1 }, svg);
+    el("text", { x: sx(t), y: 12, "text-anchor": "middle", class: "tick" }, svg).textContent = (t > 0 ? "+" : "") + t + " %";
+  });
+  let y = top;
+  rows.forEach(r => {
+    if (r.fam) { el("text", { x: 0, y: y + 17, class: "fam" }, svg).textContent = r.fam.toUpperCase(); y += famH; return; }
+    const p = r.p, d = p[z], g = el("g", { class: "row" }, svg);
+    el("rect", { x: 0, y, width: W, height: rowH, class: "hit" }, g);
+    const lab = el("text", { x: labW - 10, y: y + rowH / 2 + 4, "text-anchor": "end" }, g);
+    lab.textContent = narrow && p.name.length > 18 ? p.name.slice(0, 17) + "…" : p.name;
+    const v = d.v, bx = Math.min(sx(0), sx(v)), bw = Math.abs(sx(v) - sx(0));
+    const col = v > 0 ? "var(--up)" : v < 0 ? "var(--down)" : "var(--zero)";
+    if (v === 0) el("rect", { x: sx(0) - 2, y: y + 6, width: 4, height: rowH - 12, rx: 2, fill: col, class: "bar" }, g);
+    else el("rect", { x: bx, y: y + 5, width: Math.max(bw, 2), height: rowH - 10, rx: 3, fill: col, class: "bar" }, g);
+    const tx = v >= 0 ? sx(v) + (v === 0 ? 8 : 6) : sx(v) - 6;
+    el("text", { x: tx, y: y + rowH / 2 + 4, "text-anchor": v >= 0 ? "start" : "end", class: "val" }, g).textContent = pct(v);
+    g.addEventListener("mousemove", e => showTip(e, `<b>${p.name}</b><span class="muted">${ZN[z]} · ${FAM[p.fam]}</span>
+      <div class="r"><span>Semaine préc.</span><span>${fmt(d.prev)} FCFA</span></div>
+      <div class="r"><span>Semaine 39</span><span>${fmt(d.cur)} FCFA</span></div>
+      <div class="r"><span>Variation publiée</span><span class="${v > 0 ? "pos" : v < 0 ? "neg" : ""}">${pct(v)}</span></div>`));
+    g.addEventListener("mouseleave", hideTip);
+    y += rowH;
+  });
+  document.getElementById("var-comment").textContent = z === "abj"
+    ? "Hausse de 4 % à 38 % sur les féculents, les légumes, la graine de palme et les produits halieutiques ; quasi-stabilité des céréales, de l'oignon et de la viande de bœuf."
+    : "Stabilité d'ensemble, attribuée à la bonne disponibilité des produits vivriers. Le maïs remonte (+13 %) ; la tomate (−16 %), la banane plantain et la graine de palme (−10 %) reculent.";
+}
+
+/* ---------- Fourchettes min-max (haltères) ---------- */
+function drawRange(hostId, items, max, step) {
+  const host = document.getElementById(hostId);
+  const W = Math.max(320, host.clientWidth), narrow = W < 560;
+  const labW = narrow ? 118 : 210, R = 16, rowH = 34, top = 22;
+  const H = top + items.length * rowH + 4;
+  const x0 = labW, x1 = W - R, sx = v => x0 + v / max * (x1 - x0);
+  host.innerHTML = "";
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Fourchettes de prix min-max, Abidjan et Intérieur" }, host);
+  for (let t = 0; t <= max; t += step) {
+    el("line", { x1: sx(t), x2: sx(t), y1: top - 4, y2: H, stroke: t === 0 ? "var(--axis)" : "var(--grid)" }, svg);
+    if (!narrow || t % (step * 2) === 0) el("text", { x: sx(t), y: 12, "text-anchor": t === 0 ? "start" : t === max ? "end" : "middle", class: "tick" }, svg).textContent = fmt(t);
+  }
+  items.forEach((p, i) => {
+    const y = top + i * rowH, g = el("g", { class: "row" }, svg);
+    el("rect", { x: 0, y, width: W, height: rowH, class: "hit" }, g);
+    const lab = el("text", { x: labW - 10, y: y + rowH / 2 + 4, "text-anchor": "end" }, g);
+    lab.textContent = narrow && p.name.length > 16 ? p.name.slice(0, 15) + "…" : p.name;
+    [["abj", 10, "var(--abj)"], ["int", 24, "var(--int)"]].forEach(([z, dy, c]) => {
+      const d = p[z], yy = y + dy;
+      el("line", { x1: sx(d.min), x2: sx(d.max), y1: yy, y2: yy, stroke: c, "stroke-width": 2.5, "stroke-linecap": "round" }, g);
+      [d.min, d.max].forEach(v => el("circle", { cx: sx(v), cy: yy, r: 4.5, fill: c, stroke: "var(--surface)", "stroke-width": 2 }, g));
+    });
+    g.addEventListener("mousemove", e => showTip(e, `<b>${p.name}</b>
+      <div class="r"><span style="color:var(--abj);font-weight:600">Abidjan</span><span>${fmt(p.abj.min)} – ${fmt(p.abj.max)} FCFA</span></div>
+      <span class="small muted">− cher : ${p.abj.cheap}<br>+ cher : ${p.abj.dear}</span>
+      <div class="r"><span style="color:var(--int);font-weight:600">Intérieur</span><span>${fmt(p.int.min)} – ${fmt(p.int.max)} FCFA</span></div>
+      <span class="small muted">− cher : ${p.int.cheap}<br>+ cher : ${p.int.dear}</span>`));
+    g.addEventListener("mouseleave", hideTip);
+  });
+}
+
+/* ---------- Marchés cités ---------- */
+function tally(z, key) {
+  const c = {};
+  P.forEach(p => p[z][key].split(",").map(s => s.trim()).forEach(m => { c[m] = (c[m] || 0) + 1; }));
+  return Object.entries(c).sort((a, b) => b[1] - a[1]);
+}
+function marketCard(title, list, color, n) {
+  return `<div class="mk"><h3>${title}</h3><div class="bars">` + list.slice(0, n).map(([m, k]) =>
+    `<div class="bar-row"><span>${m}</span><span class="track"><span class="fill" style="display:block;width:${k / P.length * 100}%;background:${color}"></span></span><span class="n">${k}/${P.length}</span></div>`).join("") + "</div></div>";
+}
+document.getElementById("markets").innerHTML =
+  marketCard("Abidjan · marchés les moins chers", tally("abj", "cheap"), "var(--down)", 5) +
+  marketCard("Abidjan · marchés les plus chers", tally("abj", "dear"), "var(--up)", 5) +
+  marketCard("Intérieur · marchés les moins chers", tally("int", "cheap"), "var(--down)", 5) +
+  marketCard("Intérieur · marchés les plus chers", tally("int", "dear"), "var(--up)", 5);
+
+/* ---------- Tableau ---------- */
+function drawTable() {
+  const z = state.tbl;
+  let h = `<thead><tr><th>Produit</th><th class="n">Prix moyen préc.</th><th class="n">Prix moyen S39</th><th class="n">Variation</th><th class="n">Min</th><th class="n">Max</th><th>Moins cher</th><th>Plus cher</th></tr></thead><tbody>`;
+  FAM.forEach((f, fi) => {
+    h += `<tr class="famrow"><td colspan="8">${f}</td></tr>`;
+    P.filter(p => p.fam === fi).forEach(p => { const d = p[z];
+      h += `<tr><td>${p.name}</td><td class="n">${fmt(d.prev)}</td><td class="n">${fmt(d.cur)}</td><td class="n ${d.v > 0 ? "pos" : d.v < 0 ? "neg" : ""}">${pct(d.v)}</td><td class="n">${fmt(d.min)}</td><td class="n">${fmt(d.max)}</td><td>${d.cheap}</td><td>${d.dear}</td></tr>`; });
+  });
+  document.getElementById("data-table").innerHTML = h + "</tbody>";
+}
+
+/* ---------- Contrôles ---------- */
+function bindSeg(ids, key, attr, cb) {
+  ids.forEach(id => document.getElementById(id).addEventListener("click", e => {
+    ids.forEach(o => document.getElementById(o).setAttribute("aria-pressed", String(o === id)));
+    state[key] = e.currentTarget.dataset[attr]; cb();
+  }));
+}
+bindSeg(["var-abj", "var-int"], "zone", "zone", drawVar);
+bindSeg(["sort-fam", "sort-var"], "sort", "sort", drawVar);
+bindSeg(["tbl-abj", "tbl-int"], "tbl", "zone", drawTable);
+
+const meat = P.filter(p => p.name.startsWith("Viande"));
+const rest = P.filter(p => !p.name.startsWith("Viande"));
+function drawAll() {
+  drawVar();
+  drawRange("range-chart", rest, 2500, 250);
+  drawRange("range-chart-meat", meat, 4000, 500);
+}
+drawAll(); drawTable();
+let rz; new ResizeObserver(() => { clearTimeout(rz); rz = setTimeout(drawAll, 80); }).observe(document.querySelector(".wrap"));
+</script>
