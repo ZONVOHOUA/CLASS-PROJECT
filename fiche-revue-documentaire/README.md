@@ -8,6 +8,7 @@ Fiche de revue destinée au Cabinet du Ministre de l’Agriculture, du Développ
 |---|---|
 | `Fiche_Revue_Documentaire_Cabinet.docx` / `.pdf` | Fiche de revue (4 pages) : synthèse Cabinet en page 1, 21 observations OBS-01 à OBS-21, 2 arbitrages, 4 vérifications, suite à donner. |
 | `Fiche_Suivi_Corrections_Cabinet.docx` / `.pdf` | Fiche de suivi des corrections (2 pages) : statut de chaque observation (liste déroulante sous Word), réponse de la structure émettrice, visas. |
+| `Gabarit_Fiche_Revue_CCM.docx` / `.pdf` | **Gabarit d’une page pour les CCM** : en-tête, identification, Coup d’œil Cabinet et tableau des observations vide (OBS-01 à OBS-09). |
 | `Modele_Fiche_Revue_Documentaire_Cabinet.docx` | Modèle vierge réutilisable, avec une page de consignes à supprimer avant transmission. |
 
 ## Lecture à deux niveaux

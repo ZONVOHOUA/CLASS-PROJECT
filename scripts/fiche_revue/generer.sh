@@ -13,11 +13,12 @@ SORTIE="$(realpath -m "${2:-$ICI/../../fiche-revue-documentaire}")"
 
 python3 "$ICI/assets/restaurer_transparence.py"
 node "$ICI/build.js" "$DONNEES" "$SORTIE"
+node "$ICI/build_gabarit.js" "$SORTIE"
 python3 "$ICI/postprocess.py" "$SORTIE"/*.docx
 
 # PDF sans perte : armoiries à pleine résolution, PDF balisé, signets.
 FILTRE='pdf:writer_pdf_Export:{"ReduceImageResolution":{"type":"boolean","value":"false"},"UseLosslessCompression":{"type":"boolean","value":"true"},"ExportBookmarks":{"type":"boolean","value":"true"},"UseTaggedPDF":{"type":"boolean","value":"true"}}'
-for f in Fiche_Revue_Documentaire_Cabinet Fiche_Suivi_Corrections_Cabinet; do
+for f in Fiche_Revue_Documentaire_Cabinet Fiche_Suivi_Corrections_Cabinet Gabarit_Fiche_Revue_CCM; do
   soffice --headless --convert-to "$FILTRE" --outdir "$SORTIE" "$SORTIE/$f.docx" >/dev/null 2>&1
   echo "PDF : $SORTIE/$f.pdf ($(pdfinfo "$SORTIE/$f.pdf" | awk '/^Pages/ {print $2}') pages)"
 done
