@@ -1,0 +1,12 @@
+{
+  "name": "fiche-revue-documentaire",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Génération des fiches de revue documentaire du Cabinet (DOCX/PDF)",
+  "scripts": {
+    "build": "./generer.sh"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}
