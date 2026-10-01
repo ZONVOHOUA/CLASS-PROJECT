@@ -1,0 +1,778 @@
+{
+ "pages": [
+  {
+   "header": [
+    "NOTE À L'ATTENTION DE MONSIEUR LE MINISTRE",
+    "Benchmark international des prix agricoles · Octobre 2026"
+   ],
+   "blocks": [
+    {
+     "t": "title",
+     "text": "LES PRIX AGRICOLES IVOIRIENS SONT-ILS COMPÉTITIFS ?"
+    },
+    {
+     "t": "subtitle",
+     "text": "Benchmark international des principales filières végétales – données arrêtées au 1er octobre 2026"
+    },
+    {
+     "t": "answer",
+     "label": "Réponse courte",
+     "text": "**Pas dans la plupart des filières.** Pour le cacao, le café, le caoutchouc et le palmier, le producteur ivoirien perçoit 29 à 42 % de moins que ses concurrents et une part plus faible du prix international. L'anacarde est au niveau de l'UEMOA mais 34 % sous le Ghana ; le coton n'est à parité que grâce au budget ; le riz est payé au-dessus de la parité FOB, au détriment de sa compétitivité."
+    },
+    {
+     "t": "twocol",
+     "left": {
+      "label": "Objectif",
+      "text": "Vérifier, filière par filière, si le prix payé au producteur ivoirien est compétitif face aux producteurs concurrents, cohérent avec la valeur internationale du produit et soutenable pour la filière, puis identifier les leviers d'action."
+     },
+     "right": {
+      "label": "Méthode",
+      "text": "177 observations de prix (127 sources) appariées par produit, qualité, stade (bord champ) et période ; conversion en FCFA/kg au taux de change moyen de la période exacte (BCE, BRI, banques centrales). Trois indicateurs : **indice de rémunération** (prix CI ÷ médiane des pays comparables), **taux de transmission** (prix bord champ ÷ cours international de la même période, méthode identique pour tous) et **décomposition de la valeur**. Les comparaisons imparfaites sont signalées « indicatives »."
+     }
+    },
+    {
+     "t": "kpis",
+     "items": [
+      {
+       "value": "1 200",
+       "unit": "FCFA/kg",
+       "label": "prix du cacao 2026/27, soit −42 % par rapport au Ghana (2 086 FCFA/kg)"
+      },
+      {
+       "value": "35 %",
+       "unit": "",
+       "label": "du cours mondial du cacao (août 2026) reçus par le planteur ivoirien, contre 62 % au Ghana"
+      },
+      {
+       "value": "46 %",
+       "unit": "",
+       "label": "de la valeur CFR Asie de la noix de cajou reçus bord champ (Burkina 44 %, G.-Bissau 47 %, Ghana 69 %)"
+      },
+      {
+       "value": "60 %",
+       "unit": "",
+       "label": "du cours SICOM (kg sec) reçus par l'hévéaculteur, contre ≈100 % en Thaïlande"
+      }
+     ]
+    },
+    {
+     "t": "h2",
+     "text": "Six constats majeurs"
+    },
+    {
+     "t": "numbered",
+     "items": [
+      "**Cacao : les ventes anticipées pèsent désormais sur le planteur.** 1 200 FCFA/kg en 2026/27 contre 2 086 au Ghana (−42 %) ; 35 % du cours mondial contre 62 %. Sur dix campagnes : 56 % en moyenne (Ghana 64 %). Le système a protégé les planteurs pendant la chute (103 % du cours en principale 2025/26) mais les prive de la remontée.",
+      "**Café, caoutchouc, palmier : une rémunération inférieure de 29 à 34 % à celle des concurrents** (indices 68, 71 et 66). Le régime de palme vaut 14 % du prix mondial de l'huile brute, contre 21 % à 22 % en Asie.",
+      "**Anacarde : un prix plancher au niveau des voisins de l'UEMOA** (400 FCFA/kg contre 385 à 410), mais 34 % sous le Ghana ; 40 % de la valeur se forme entre le port et l'acheteur asiatique.",
+      "**Coton : la parité régionale** (310 contre une médiane de 300 FCFA/kg) **repose sur une subvention de 25,3 Mds FCFA**, soit ≈72 FCFA/kg (23 % du prix).",
+      "**Riz : un paddy bien payé mais peu compétitif.** 233 FCFA/kg, +79 % par rapport au Sénégal et +51 % au-dessus de l'équivalent paddy du riz thaï FOB : l'enjeu est le coût de revient, pas le prix.",
+      "**Fruits et vivriers : aucun prix bord champ public comparable.** Aucune conclusion robuste n'est possible ; un dispositif d'information sur les prix au producteur est un préalable."
+     ]
+    },
+    {
+     "t": "figure",
+     "src": "fig1_positionnement",
+     "width": 100,
+     "caption": "Graphique 1 – Positionnement des filières : rémunération relative et part du prix international reçue par le producteur ivoirien",
+     "source": "Source : base Excel jointe (onglets Positionnement, Indicateurs, Decomposition). Cacao et café : ouverture 2026/27 ; anacarde : 2026 ; coton : 2025/26 ; caoutchouc : 2025-2026, base kg sec (DRC 60 %)."
+    }
+   ]
+  },
+  {
+   "header": [
+    "CARTE GÉNÉRALE DE COMPÉTITIVITÉ",
+    "Page 2"
+   ],
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "Quatre filières sous les concurrents, l'anacarde au niveau régional, le coton à parité grâce au budget, le riz au-dessus mais coûteux"
+    },
+    {
+     "t": "lead",
+     "text": "Un indice inférieur à 100 signifie que le producteur ivoirien reçoit moins que son homologue, pour un même produit, au même stade et à la même période. La « part du prix international » rapporte le prix bord champ au cours mondial de la même période, avec une méthode identique pour tous les pays."
+    },
+    {
+     "t": "table",
+     "style": "matrix",
+     "headers": [
+      "Filière",
+      "Prix CI (FCFA/kg)",
+      "Pays de référence",
+      "Prix de référence (FCFA/kg)",
+      "Écart CI",
+      "Part du prix international (CI / comparateurs)",
+      "Évolution réelle du prix CI (2016→2026)",
+      "Explication principale",
+      "Diagnostic"
+     ],
+     "widths": [
+      12.5,
+      7,
+      12,
+      8,
+      6.5,
+      11,
+      9,
+      19.5,
+      14.5
+     ],
+     "rows": [
+      [
+       "▼ Cacao",
+       "1 200",
+       "Ghana",
+       "2 086",
+       "−42 %",
+       "35 % / 62 %",
+       "−12 %",
+       "Ventes anticipées conclues au creux du marché ; prélèvements ≈22 % du CAF",
+       "Rémunération et transmission faibles"
+      ],
+      [
+       "▼ Café",
+       "1 300",
+       "Vietnam, Ouganda",
+       "1 917",
+       "−32 %",
+       "58 % / 83 %",
+       "+40 %",
+       "Prix administré ; production effondrée (−70 % en 2024/25)",
+       "Rémunération faible ; productivité en cause"
+      ],
+      [
+       "◆ Anacarde",
+       "400",
+       "Burkina, G.-Bissau, Ghana",
+       "410",
+       "−2 %",
+       "46 % / 47 %",
+       "−8 %",
+       "Valeur captée en aval (40 % du CFR après le port)",
+       "Au niveau UEMOA ; −34 % face au Ghana"
+      ],
+      [
+       "● Coton",
+       "310",
+       "Burkina, Mali, Bénin, Togo",
+       "300",
+       "+3 %",
+       "73 % / n.d.",
+       "−5 %",
+       "Subvention 25,3 Mds FCFA (≈72 FCFA/kg)",
+       "Parité soutenue par le budget"
+      ],
+      [
+       "▼ Caoutchouc",
+       "807*",
+       "Thaïlande, Indonésie",
+       "1 144*",
+       "−29 %",
+       "60 % / 101 %",
+       "n.d.",
+       "Formule 63-66 % d'un prix net de coûts ; DRC conventionnel 60 %",
+       "Rémunération et transmission faibles"
+      ],
+      [
+       "▼ Palmier à huile",
+       "80",
+       "Indonésie, Malaisie",
+       "121",
+       "−34 %",
+       "14 % / 21 %**",
+       "n.d.",
+       "Partage huile/régime défavorable au planteur",
+       "Rémunération faible"
+      ],
+      [
+       "▲ Riz",
+       "233",
+       "Sénégal",
+       "130",
+       "+79 %",
+       "151 % de la parité FOB",
+       "n.d.",
+       "Coût de production et d'usinage élevé",
+       "Rémunération élevée, compétitivité faible"
+      ],
+      [
+       "○ Banane, mangue, ananas, vivriers",
+       "—",
+       "—",
+       "—",
+       "—",
+       "—",
+       "—",
+       "Pas de prix bord champ public comparable",
+       "Données insuffisantes"
+      ]
+     ],
+     "notes": "Périodes : cacao et café 2026/27 (ouverture) ; anacarde 2026 ; coton 2025/26 (évolution réelle depuis 2017/18) ; caoutchouc sept. 2026 (* base kg sec, DRC 60 %) ; palmier janv. 2026 (** prix du régime ÷ prix mondial de l'huile brute) ; riz 2025 (part = prix du paddy ÷ équivalent paddy du riz thaï 5 % FOB). ▼ sous les comparateurs · ● à parité · ▲ au-dessus · ◆ mitigé · ○ données insuffisantes. Source : base Excel, onglets Matrice et Indicateurs."
+    },
+    {
+     "t": "figrow",
+     "items": [
+      {
+       "src": "fig2_indices_prix",
+       "width": 64,
+       "caption": "Graphique 2 – Prix bord champ ivoirien en % du prix de chaque pays comparable",
+       "source": "Pays : BF Burkina, BJ Bénin, GH Ghana, GW Guinée-Bissau, ID Indonésie, ML Mali, MY Malaisie, NG Nigeria, SN Sénégal, TG Togo, TH Thaïlande, TZ Tanzanie, UG Ouganda, VN Vietnam. Points vides : comparaison indicative (stade, période ou qualité imparfaitement appariés). * Caoutchouc et palmier : aucun comparateur direct, médiane des comparateurs indicatifs."
+      },
+      {
+       "src": "fig3_transmission",
+       "width": 36,
+       "caption": "Graphique 3 – Part du prix international reçue par le producteur",
+       "source": "Cacao : cours ICCO août 2026 ; café : robusta août 2026 (Ouganda : juil.) ; anacarde : CFR Asie avr.-mai 2026 ; coton : indice A, équivalent fibre ; caoutchouc : TSR20 du mois précédent, base sèche."
+      }
+     ]
+    },
+    {
+     "t": "callout",
+     "text": "**À retenir.** L'écart de prix avec les concurrents n'est pas d'abord un problème de change ou de qualité : c'est un problème de **transmission**. La part du prix international qui atteint le planteur ivoirien est inférieure à celle des concurrents de 41 points pour le caoutchouc, 26 pour le cacao, 26 pour le café et 7 pour le palmier (−32 % en relatif). Pour l'anacarde, elle égale celle des voisins de l'UEMOA mais reste inférieure de 24 points à celle du Ghana."
+    }
+   ]
+  },
+  {
+   "header": [
+    "CULTURES DE RENTE ET INDUSTRIELLES",
+    "Page 3"
+   ],
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "Le système ivoirien stabilise les prix mais transmet moins de valeur : 56 % du cours mondial du cacao en moyenne sur dix ans, contre 64 % au Ghana"
+    },
+    {
+     "t": "split",
+     "ratio": "1.75fr 1fr",
+     "left": [
+      {
+       "t": "figure",
+       "src": "fig4_cacao_series",
+       "width": 100,
+       "caption": "Graphique 4 – Cacao : prix bord champ CI et Ghana et cours mondial de la même demi-campagne (FCFA/kg)",
+       "source": "Source : base Excel, onglet Cacao_transmission (prix CCC et COCOBOD ; cours ICCO – Banque mondiale, FMI ; change BCE, BRI, Banque du Ghana). Graduations : campagnes principale (oct.-mars) et intermédiaire (avr.-sept.)."
+      }
+     ],
+     "right": [
+      {
+       "t": "cards",
+       "cols": 1,
+       "items": [
+        {
+         "title": "Cacao",
+         "icon": "▼",
+         "constat": "56 % du cours mondial transmis sur dix campagnes (Ghana 64 %) ; 49 % sur les trois dernières. Le prix 2026/27 (1 200 FCFA/kg) implique un CAF de référence ≤2 000 FCFA/kg (3,54 $/kg) quand le marché cote 5,99 $/kg (août 2026). Revenu brut ≈600 000 FCFA/ha contre ≈834 000 au Ghana (rendements moyens de 500 et 400 kg/ha).",
+         "explication": "Plus de 1,1 Mt vendues par anticipation de mars à juin 2026, au creux du marché ; part producteur ≥60 % du CAF ; prélèvements ≈22 % du CAF (dont DUS 14,6 %). En 2025/26, le prix garanti (2 800) a dépassé le cours mondial : 123 000 t invendues en janvier.",
+         "implication": "Prix soutenable pour le régulateur mais peu compétitif pour le planteur ; écart de 886 FCFA/kg avec le Ghana (risque de fuite). Le Ghana garantit 70 % du FOB réalisé (Act 1182), mais avec un déficit de financement du COCOBOD ≈1,4 Md $."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "t": "cards",
+     "cols": 3,
+     "items": [
+      {
+       "title": "Café robusta",
+       "icon": "▼",
+       "constat": "1 300 FCFA/kg (2026/27) contre ≈2 037 au Vietnam (indice 64) ; 2025/26 : 1 700 contre ≈1 796 en Ouganda. Transmission moyenne 59 % sur dix ans (Vietnam 90 %, Ouganda 77 % en 2026).",
+       "explication": "Prix administré calé sur les ventes anticipées ; production effondrée (24 832 t d'octobre 2024 à juin 2025, −70 %) ; maintien du prix en 2019/20 financé par 32 Mds FCFA.",
+       "implication": "Le revenu du caféiculteur dépend d'abord de la productivité (régénération du verger) ; un prix plus élevé ne compense pas des volumes en chute."
+      },
+      {
+       "title": "Anacarde",
+       "icon": "◆",
+       "constat": "Plancher 400 FCFA/kg (prix moyen payé à Niakara : 416) ; Burkina 385, G.-Bissau 410, Ghana ≈608, Tanzanie ≈692 (indicatif). Le planteur reçoit 46 % du CFR Asie, comme au Burkina (44 %) et en Guinée-Bissau (47 %), contre 69 % au Ghana.",
+       "explication": "Barème : +84 FCFA/kg jusqu'au magasin portuaire, DUS 5 % (≈44 FCFA/kg), puis ≈348 FCFA/kg (40 % du CFR) de fret, frais, financement et marges d'exportation ; pas de vente aux enchères ni de prime qualité.",
+       "implication": "Prix au niveau régional mais transmission faible : la valeur se joue entre le port et l'Asie (transparence, concurrence, qualité, transformation)."
+      },
+      {
+       "title": "Coton",
+       "icon": "●",
+       "constat": "310 FCFA/kg contre une médiane régionale de 300 (indice 103) ; équivalent fibre = 73 % de l'indice A. Revenu brut ≈305 000 FCFA/ha (Bénin ≈374 000 ; Burkina ≈281 000).",
+       "explication": "Subvention exceptionnelle de 25,3 Mds FCFA en 2025/26 (11,9 en 2024/25), soit ≈72 FCFA/kg.",
+       "implication": "Parité obtenue par le budget, pas par la compétitivité : le levier durable est le rendement (inférieur de 21 % à celui du Bénin)."
+      }
+     ]
+    },
+    {
+     "t": "figure",
+     "src": "fig5_decomposition",
+     "width": 92,
+     "caption": "Graphique 5 – Sur 100 FCFA de valeur internationale, combien reviennent au producteur ?",
+     "source": "Cacao : structure réglementaire du CAF (Banque mondiale 2019, OMC 2017) ; anacarde : barème 2026 (CCAK) et CFR Asie avr.-mai 2026 (cotation de négoce). Onglet Decomposition."
+    },
+    {
+     "t": "cards",
+     "cols": 2,
+     "items": [
+      {
+       "title": "Caoutchouc",
+       "icon": "▼",
+       "constat": "≈60 % du cours SICOM par kg sec (54 % si le DRC réel est de 66 %) contre ≈100 % en Thaïlande ; 484 FCFA/kg en sept. 2026, soit ≈807 par kg sec contre ≈1 284 en Indonésie.",
+       "explication": "Formule : 63 % (66 % depuis 2026) d'un prix de référence déjà net des coûts ; DRC conventionnel de 60 % inférieur au DRC mesuré (65-68 %).",
+       "implication": "Plus grand écart de transmission avec les concurrents (≈40 points) : la formule et la mesure du DRC sont les premiers leviers."
+      },
+      {
+       "title": "Palmier à huile",
+       "icon": "▼",
+       "constat": "Régime à 80 FCFA/kg (janv. 2026) contre ≈115 en Indonésie et ≈127 en Malaisie ; le régime vaut 14 % du prix mondial de l'huile (Asie 21 %-22 %).",
+       "explication": "L'huile brute est payée 111 % du prix mondial sur le marché intérieur : la valeur protégée profite à la transformation, pas au planteur.",
+       "implication": "Indexer le prix du régime sur le prix de l'huile et le taux d'extraction mesuré (modèle MPOB à 1 % OER)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "header": [
+    "FRUITS, HORTICULTURE ET VIVRIER",
+    "Page 4"
+   ],
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "Riz : rémunération élevée mais filière peu compétitive ; fruits et vivriers : des marchés différents, une information à construire"
+    },
+    {
+     "t": "split",
+     "left": [
+      {
+       "t": "cards",
+       "cols": 1,
+       "items": [
+        {
+         "title": "Riz paddy",
+         "icon": "▲",
+         "constat": "233 FCFA/kg en moyenne 2025, contre 130 au Sénégal (160 payés par les usiniers avec la subvention) et ≈124 au Vietnam (paddy frais). L'équivalent paddy du riz thaï 5 % FOB vaut 154 FCFA/kg : le paddy ivoirien est payé 151 % de cette parité (hors fret et droits).",
+         "explication": "Riziculture majoritairement pluviale, rendements faibles, usinage coûteux ; le prix élevé reflète le coût de revient et la préférence pour le riz local, pas une meilleure valorisation internationale. La Côte d'Ivoire importe encore ≈1,75 Mt par an.",
+         "implication": "Ici, mieux rémunérer le producteur ne passe pas par le prix mais par la baisse du coût de revient (irrigation, semences, mécanisation, qualité d'usinage)."
+        }
+       ]
+      },
+      {
+       "t": "minititle",
+       "text": "Prix au kilo ≠ revenu à l'hectare"
+      },
+      {
+       "t": "table",
+       "style": "plain compact",
+       "headers": [
+        "Filière – pays",
+        "Rendement (kg/ha)",
+        "Prix (FCFA/kg)",
+        "Revenu brut (FCFA/ha)"
+       ],
+       "widths": [
+        40,
+        19,
+        18,
+        23
+       ],
+       "rows": [
+        [
+         "Cacao – Côte d'Ivoire",
+         "500",
+         "1 200",
+         "600 000"
+        ],
+        [
+         "Cacao – Ghana",
+         "400",
+         "2 086",
+         "834 312"
+        ],
+        [
+         "Coton – Côte d'Ivoire",
+         "984",
+         "310",
+         "305 040"
+        ],
+        [
+         "Coton – Bénin",
+         "1 248",
+         "300",
+         "374 400"
+        ],
+        [
+         "Coton – Burkina Faso",
+         "865",
+         "325",
+         "281 125"
+        ],
+        [
+         "Coton – Mali",
+         "914",
+         "300",
+         "274 200"
+        ]
+       ],
+       "notes": "Cacao : revenu ivoirien inférieur de 28 % malgré un rendement supérieur (prix 2026/27). Coton : le Bénin obtient le meilleur revenu avec un prix plus bas, grâce à un rendement supérieur de 27 %. Rendements : littérature (cacao), données de campagne 2024/25 (coton). Onglet Volumes_Rendements."
+      }
+     ],
+     "right": [
+      {
+       "t": "figure",
+       "src": "fig6_riz",
+       "width": 100,
+       "caption": "Graphique 6 – Riz paddy : prix bord champ comparés (FCFA/kg)",
+       "source": "USDA (Côte d'Ivoire, Sénégal), presse vietnamienne ; riz thaï 5 % FOB (Banque mondiale) × 65 %. Onglet Observations."
+      }
+     ]
+    },
+    {
+     "t": "h2",
+     "text": "Des structures de marché qui conditionnent la comparaison"
+    },
+    {
+     "t": "table",
+     "style": "plain",
+     "headers": [
+      "Filière",
+      "Structure de marché",
+      "Ce qui existe",
+      "Comparabilité",
+      "Conclusion"
+     ],
+     "widths": [
+      13,
+      22,
+      30,
+      15,
+      20
+     ],
+     "rows": [
+      [
+       "Banane dessert",
+       "Filière intégrée (plantations exportatrices sous contrat)",
+       "Exportations 271 000 t (2025) ; Équateur : prix minimum 7,50 $ la caisse de 43 lb (≈217 FCFA/kg)",
+       "Aucun prix producteur public en Côte d'Ivoire",
+       "Données insuffisantes"
+      ],
+      [
+       "Mangue",
+       "Interprofession (Inter-Mangue), export frais",
+       "Prix en station 220 FCFA/kg ; bord champ 2 450 FCFA la caisse (poids non publié) ; Burkina : plancher 95 FCFA/kg bord champ",
+       "Stades différents",
+       "Non comparable en l'état"
+      ],
+      [
+       "Ananas, cola, coco, canne à sucre",
+       "Export résiduel (ananas ≈24 000 t en 2023), niches, agro-industrie intégrée",
+       "Pas de prix producteur publié",
+       "—",
+       "Données insuffisantes"
+      ],
+      [
+       "Maïs, manioc, igname, plantain, tomate, oignon",
+       "Marchés libres domestiques",
+       "OCPV : prix à la consommation hebdomadaires par marché ; pas de prix bord champ harmonisé",
+       "Stade non comparable (consommateur)",
+       "Données insuffisantes"
+      ]
+     ]
+    },
+    {
+     "t": "callout",
+     "text": "**Règle de prudence appliquée.** Pour la banane, l'ananas, la mangue (au stade bord champ) et l'ensemble des vivriers, *les données disponibles ne permettent pas de conclure de manière robuste sur la compétitivité relative du prix de ces filières.* Les prix à la consommation de l'OCPV mesurent les marges de distribution, pas la rémunération du producteur."
+    },
+    {
+     "t": "h2",
+     "text": "Lecture transversale : quatre régimes de prix, quatre logiques de compétitivité"
+    },
+    {
+     "t": "table",
+     "style": "plain",
+     "headers": [
+      "Régime",
+      "Filières",
+      "Atout",
+      "Faiblesse observée"
+     ],
+     "widths": [
+      20,
+      20,
+      28,
+      32
+     ],
+     "rows": [
+      [
+       "Prix administré et ventes anticipées",
+       "Cacao, café",
+       "Stabilité (coefficient de variation du prix CI 51 % contre 62 % pour le cours mondial du cacao, 2016-2026)",
+       "Ventes conclues des mois à l'avance (mars-juin pour la campagne d'octobre 2026) : le planteur perd lors des remontées"
+      ],
+      [
+       "Prix plancher et barème",
+       "Anacarde, coton, caoutchouc, palmier, mangue",
+       "Protection minimale du producteur",
+       "Formules figées, marges intermédiaires et parts producteur non revues"
+      ],
+      [
+       "Filière intégrée",
+       "Banane, ananas",
+       "Qualité et logistique maîtrisées",
+       "Aucune transparence sur la rémunération des planteurs"
+      ],
+      [
+       "Marché libre domestique",
+       "Riz, maïs, tubercules, maraîchage",
+       "Prix qui reflète l'offre et la demande",
+       "Aucune information publique au stade du producteur"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "header": [
+    "ENSEIGNEMENTS POUR LA CÔTE D'IVOIRE",
+    "Page 5"
+   ],
+   "blocks": [
+    {
+     "t": "h1",
+     "text": "Six leviers pour mieux rémunérer le producteur sans fragiliser la compétitivité des filières"
+    },
+    {
+     "t": "recos",
+     "items": [
+      {
+       "n": "1",
+       "title": "Cacao et café – réduire le décalage des ventes anticipées",
+       "text": "Étaler les ventes sur 12 à 18 mois par tranches plafonnées, recourir à des contrats à prix à fixer et à des couvertures, prévoir une révision en cours de campagne quand le cours dépasse durablement le CAF de référence. Constat : CAF implicite 2026/27 ≤3,5 $/kg contre 6,0 $/kg sur le marché."
+      },
+      {
+       "n": "2",
+       "title": "Publier la formation du prix",
+       "text": "Publier à chaque campagne le barème complet (CAF ou FOB réalisé, prélèvements, marges) pour le cacao, le café, l'anacarde, le caoutchouc et le palmier, et suivre un indicateur « part producteur ». Constat : CAF non publié ; 40 % de la valeur de la noix non expliquée publiquement."
+      },
+      {
+       "n": "3",
+       "title": "Réviser les formules du caoutchouc et du palmier",
+       "text": "Caoutchouc : trajectoire au-delà de 66 % et DRC mesuré au point d'achat ; palmier : prix du régime indexé sur le prix de l'huile et le taux d'extraction mesuré. Constat : 60 % contre ≈100 % en Thaïlande ; régime à 14 % du prix de l'huile contre 21 %-22 %."
+      },
+      {
+       "n": "4",
+       "title": "Anacarde – faire jouer la concurrence et payer la qualité",
+       "text": "Ventes groupées ou enchères en magasin (modèle tanzanien), prime au rendement en amande (KOR), publication d'un prix FOB de référence. Constat : 46 % du CFR contre 69 % au Ghana et 79 % en Tanzanie (comparaison indicative)."
+      },
+      {
+       "n": "5",
+       "title": "Productivité avant prix (café, riz, coton, cacao)",
+       "text": "Régénération du verger caféier, intensification rizicole, diffusion des itinéraires cotonniers les plus productifs ; recentrer progressivement la subvention cotonnière (≈72 FCFA/kg) sur les intrants et le rendement. Constat : riz à 151 % de la parité FOB ; rendement cotonnier inférieur de 21 % à celui du Bénin."
+      },
+      {
+       "n": "6",
+       "title": "Fiscalité contracyclique et observatoire des prix",
+       "text": "Moduler les prélèvements sur le cacao (≈22 % du CAF) selon le niveau des cours ; créer un observatoire des prix au producteur (Côte d'Ivoire et pays concurrents, vivriers inclus) publiant un benchmark trimestriel. Constat : aucune série bord champ publique pour les fruits et les vivriers."
+      }
+     ]
+    },
+    {
+     "t": "h2",
+     "text": "Matrice d'action"
+    },
+    {
+     "t": "table",
+     "style": "matrix2",
+     "headers": [
+      "Problème observé",
+      "Filières concernées",
+      "Action possible",
+      "Institution pilote"
+     ],
+     "widths": [
+      27,
+      17,
+      34,
+      22
+     ],
+     "rows": [
+      [
+       "Transmission retardée par le calendrier des ventes anticipées",
+       "Cacao, café",
+       "Lissage et couverture des ventes ; clause de révision en cours de campagne",
+       "CCC, avec le MINADERPV et le ministère chargé des Finances"
+      ],
+      [
+       "Formation du prix peu transparente",
+       "Cacao, café, anacarde, caoutchouc, palmier",
+       "Publication des barèmes et des prix FOB/CAF réalisés ; indicateur « part producteur »",
+       "CCC, CCAK, APROMAC, Conseil Hévéa-Palmier à huile-Coco"
+      ],
+      [
+       "Part producteur figée par formule et conventions de mesure",
+       "Caoutchouc, palmier",
+       "Révision des formules ; DRC et taux d'extraction mesurés",
+       "Conseil Hévéa-Palmier à huile-Coco, APROMAC, AIPH"
+      ],
+      [
+       "Valeur captée en aval de l'exploitation",
+       "Anacarde",
+       "Ventes groupées, enchères, prime qualité, prix FOB publié",
+       "CCAK, MINADERPV, ministère du Commerce"
+      ],
+      [
+       "Faible productivité, coût de revient élevé",
+       "Café, riz, coton, cacao",
+       "Régénération, intensification, recentrage des subventions sur le rendement",
+       "FIRCA, ANADER, CNRA, ADERIZ, Intercoton"
+      ],
+      [
+       "Prélèvements procycliques ; information lacunaire",
+       "Cacao ; fruits et vivriers",
+       "Modulation des prélèvements ; observatoire des prix au producteur",
+       "Ministère chargé des Finances, MINADERPV, OCPV, INS"
+      ]
+     ]
+    },
+    {
+     "t": "twobox",
+     "left": {
+      "label": "Séquencement proposé",
+      "items": [
+       "**Campagne 2026/27 (0-6 mois)** : mandat au CCC pour le lissage des ventes 2027/28 ; publication des barèmes 2026/27 ; mission technique sur la formule caoutchouc (DRC mesuré).",
+       "**12-24 mois** : réforme des formules caoutchouc et palmier ; pilote d'enchères anacarde dans deux départements ; observatoire des prix opérationnel.",
+       "**24-36 mois** : prélèvements cacao modulés selon les cours ; subvention cotonnière recentrée sur le rendement."
+      ]
+     },
+     "right": {
+      "label": "Points de vigilance (soutenabilité)",
+      "items": [
+       "Relever le prix bord champ sans réformer les ventes anticipées exposerait le CCC à des pertes : en 2025/26, un prix au-dessus du marché a laissé 123 000 t invendues.",
+       "Le modèle ghanéen (≥70 % du FOB) n'est pas un modèle en soi : il coexiste avec un déficit de financement du COCOBOD estimé à 1,4 Md $.",
+       "Pour le riz, soutenir encore le prix du paddy (151 % de la parité FOB) creuserait l'écart avec les importations."
+      ]
+     }
+    },
+    {
+     "t": "note",
+     "text": "Limites : comparaisons de pays réalisées à date d'observation (et non en moyenne de campagne) lorsque les séries étrangères ne sont pas publiées ; prix étrangers parfois issus de la presse ou de sources commerciales (cotés C dans la base) ; FAOSTAT, Comtrade et Eurostat n'étaient pas téléchargeables depuis l'environnement d'étude. Détails : METHODOLOGIE_ET_SOURCES.md et base Excel (onglet Audit_QC)."
+    }
+   ]
+  }
+ ],
+ "values": {
+  "cac_ci": 1200,
+  "cac_gh": 2085.78033969767,
+  "cac_gap": -885.7803396976701,
+  "cac_ecart": -0.42467575460322,
+  "cac_idx": 57.532424539678,
+  "cac_tr_ci": 0.354238857872395,
+  "cac_tr_gh": 0.615720371089331,
+  "cac_icco_usd": 5.987,
+  "cac_icco_fcfa": 3387.54479733635,
+  "cac_ng": 2436.69271274946,
+  "cac_2526P_tr": 1.02522645178755,
+  "cac_2526P_gh_tr": 1.08544187047824,
+  "cac_2526I_tr": 0.450052659103987,
+  "cac_2526I_gh": 2059.19544268274,
+  "cac_2526I_gh_tr": 0.772288653828484,
+  "cac_cm_04": 1325,
+  "cac_cm_06": 2175,
+  "cac_cm_06_tr": 0.868873661158462,
+  "cac_ec_02": 1223.05897842133,
+  "cac_tr10_ci": 0.563939042121057,
+  "cac_tr10_gh": 0.639230276603308,
+  "cac_tr3_ci": 0.492319808644166,
+  "cac_tr3_gh": 0.56655957112504,
+  "cac_idx10": 91.0607967443093,
+  "cac_cv_ci": 0.510125837710134,
+  "cac_cv_icco": 0.616538711712312,
+  "cac_caf_impl": 2000,
+  "cac_caf_impl_usd": 3.53840266968719,
+  "cac_rha_ci": 600000,
+  "cac_rha_gh": 834312.135879066,
+  "cac_reel26": -0.11789955022676,
+  "cac_reel25": 1.05823438280423,
+  "caf_ci": 1300,
+  "caf_vn": 2037.16703893881,
+  "caf_ug": 1796.10938331957,
+  "caf_ci_2526": 1700,
+  "caf_idx_vn": 63.814109258178,
+  "caf_idx_ug": 94.6490239284905,
+  "caf_idx": 67.8270939424768,
+  "caf_med": 1916.63821112919,
+  "caf_ecart": -0.321729060575232,
+  "caf_tr_ci": 0.576957653133884,
+  "caf_tr_vn": 0.904122395252183,
+  "caf_tr_ug": 0.765565934987822,
+  "caf_tr_med": 0.834844165120003,
+  "caf_tr10": 0.59434814942868,
+  "caf_tr3": 0.543925163598092,
+  "caf_reel26": 0.401559603528593,
+  "ana_ci": 400,
+  "ana_real": 416,
+  "ana_bf": 385,
+  "ana_gw": 410,
+  "ana_gh": 607.91081367625,
+  "ana_tz": 691.818009175122,
+  "ana_med": 410,
+  "ana_idx": 97.5609756097561,
+  "ana_ecart": -0.024390243902439,
+  "ana_tr_ci": 0.456947417453556,
+  "ana_tr_gh": 0.69445819087863,
+  "ana_tr_tz": 0.790311131601081,
+  "ana_tr_bf": 0.439811889299047,
+  "ana_tr_med": 0.468371102889895,
+  "ana_tr_gw": 0.468371102889895,
+  "ana_gh_ecart": -0.3420087437151189,
+  "ana_gh_fob": 0.773819868276513,
+  "ana_cfr": 875.374243778621,
+  "ana_log": 84,
+  "ana_dus": 43.768712188931,
+  "ana_resid": 347.60553158969,
+  "ana_resid_pct": 0.397093624881198,
+  "ana_reel26": -0.0758947669042246,
+  "cot_ci": 310,
+  "cot_med": 300,
+  "cot_idx": 103.333333333333,
+  "cot_ecart": 0.0333333333333334,
+  "cot_tr": 0.727950319452892,
+  "cot_tr10": 0.58600087043592,
+  "cot_sub_kg": 71.9232212506112,
+  "cot_sub_pct": 0.232010391131004,
+  "cot_rha_ci": 305040,
+  "cot_rha_bj": 374400,
+  "cot_rha_bf": 281125,
+  "cot_reel": -0.0475731210033133,
+  "cot_got": 0.451833520337499,
+  "cot_rdt_gap": -0.21153846153846156,
+  "cao_ci_sep": 484,
+  "cao_ci_sep_sec": 806.666666666667,
+  "cao_id": 1283.83777283919,
+  "cao_idx_id": 62.8324453238929,
+  "cao_idx_th": 72.6878070697759,
+  "cao_idx": 70.5087293943515,
+  "cao_share": 0.598755269673713,
+  "cao_share66": 0.544322972430648,
+  "cao_th": 1.00609327286599,
+  "pal_ci": 80,
+  "pal_id": 114.8472019431,
+  "pal_my": 127.090897367727,
+  "pal_idx": 66.1326184076703,
+  "pal_ci_w": 0.14347141986305,
+  "pal_ci_dom": 0.129032258064516,
+  "pal_id_w": 0.205966139125938,
+  "pal_my_w": 0.216889150377712,
+  "pal_cpo": 1.11190350393864,
+  "riz_ci": 233,
+  "riz_sn": 130,
+  "riz_vn": 123.69115921635,
+  "riz_fob": 154.264392111358,
+  "riz_tr": 1.51039392053486,
+  "riz_idx_sn": 179.230769230769,
+  "riz_idx": 179.230769230769,
+  "riz_ecart_sn": 0.792307692307692,
+  "ban_ec": 216.932006725785,
+  "man_ci": 220,
+  "man_bf": 95,
+  "vol_cac": 2400,
+  "n_obs": 177,
+  "n_src": 127
+ }
+}
